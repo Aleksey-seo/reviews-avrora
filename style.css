@@ -1,0 +1,233 @@
+:root {
+  --one-color: #FA3B50;
+  --two-color: #fff;
+  --three-color: #EBEBEB;
+  --five-color: #F5F5F5;
+  --six-color: #000;
+  --seven-color: #E6E6E6;
+  --font-size-large: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+    background-color: #6d6c6ce6;
+    cursor: pointer;
+}
+
+.header_top {
+    background-color: var(--three-color);
+}
+
+.header_top_menu {
+    margin: auto 60px;
+    padding: 48px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_top_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_top_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_top_logo {
+    width: 245px;
+    height: 47px;
+}
+
+.header_top_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.header_top_brend_img {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header_top_cars {
+    width: 64px;
+    height: 64px;
+    background-color: var(--two-color);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_top_cars {
+    width: auto;
+    height: auto;
+}
+
+select {
+    appearance: none;
+    background: url("img/arrow.png") no-repeat right 20px center;
+    padding-right: 40px;
+}
+
+.city {
+    border: none;
+    width: 590px;
+    background-color: var(--two-color);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+
+.header_bnr {
+    background-color: var(--one-color);
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-left: 20px;
+}
+
+/*CAR-CARD*/
+
+.used_content {
+    margin: 60px
+}
+
+.car-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.car-card {
+    max-width: 587px;
+    width: 33%;
+    background: var(--five-color);
+    border-radius: 20px;
+}
+
+.car-card-content {
+    margin-bottom: 20px;
+}
+
+.image-content {
+    background-image: url(img/card/Скриншот_1.svg);
+    background-repeat: no-repeat;
+    padding: clamp(5px, 1.5vw, 23px);
+    border-radius: 20px 20px 0 0;
+}
+
+.image-content-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-content_title {
+    color: var(--two-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.image-content_grade {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--one-color);
+    color: var(--two-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.btn-reviews {
+    padding: 18px clamp(20px, 2.5vw, 40px);
+    background-color: var(--one-color);
+    border-radius: 20px;
+    color: var(--two-color);
+    font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.btn-map {
+    padding: 18px clamp(20px, 2.5vw, 40px);
+    background-color: var(--five-color);
+    border-radius: 20px;
+    color: var(--six-color);
+    font-size: clamp(12px, 1.5vw,16px);
+}
+
+.image-pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+
+    border-radius: 0 0 20px 20px;
+    overflow: hidden; /* ключевое */
+}
+
+
+.pictures_img-2 {
+    margin: 0px 2px;
+}
+
+.pictures_img-3 {
+    margin-right: 2px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*card parameters*/
+
+.car-info {
+    margin: 0;
+}
+
+.car-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 32px 11px 32px;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 1.5vw,18px);
+}
+
+.car-info-row.bot {
+    border-bottom: none;
+}
+
+.car-info-row dt {
+    color: var(--six-color);
+}
+
+.car-info-row dd {
+    margin: 0;
+    text-align: right;
+}
+
+
+
+
