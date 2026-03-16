@@ -69,7 +69,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -124,7 +124,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -180,7 +180,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -237,7 +237,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -292,7 +292,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -348,7 +348,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -381,7 +381,7 @@
                 </div>
             </div>
             <div class="car-content">
-                               <div class="car-card">
+                <div class="car-card">
                     <div class="car-card-content">
                         <div class="image-content">
                             <div class="image-content-block">
@@ -405,7 +405,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -460,7 +460,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -516,7 +516,7 @@
                             <div class="pictures_img-3">
                                 <img src="img/card/3.webp" alt="">
                             </div>
-                            <div class="pictures_img">
+                            <div class="pictures_img openGalleryBtn">
                                 <span class="pictures_img-text">Еще 10 фото</span> 
                                 <img src="img/card/4.webp" alt="">
                             </div>
@@ -555,7 +555,9 @@
             <div class="stock_content">
                 <div class="stock_block-1">
                     <div class="stock_text">Авто в наличии</div>
-                    <div class="stock_next">Показать все авто</div>
+                    <div class="stock_next"> 
+                        <div class="stock_next-text"> Показать все авто</div><div class="stock_next-svg"><img src="img/arrow-right.svg" alt=""></div>
+                    </div>
                 </div>
                 <div class="stock_block-2">
                     <div class="stock_carts">
@@ -608,7 +610,47 @@
                 </div>
             </div>
         </section>
+
+        <!-- МОДАЛКА ГАЛЕРЕИ -->
+        <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+            <div class="gallery-modal__dialog" role="dialog" aria-modal="true" aria-label="Галерея автомобиля">
+            <button class="gallery-modal__close" id="closeGalleryBtn" aria-label="Закрыть галерею"></button>
+
+            <div class="gallery-modal__content">
+                <aside class="gallery-sidebar">
+                <button class="gallery-sidebar__arrow gallery-sidebar__arrow--up" id="thumbPrevBtn" aria-label="Предыдущее фото"></button>
+
+                <div class="gallery-sidebar__track">
+                    <ul class="gallery-thumbs" id="galleryThumbs"></ul>
+                </div>
+
+                <button class="gallery-sidebar__arrow gallery-sidebar__arrow--down" id="thumbNextBtn" aria-label="Следующее фото"></button>
+                </aside>
+
+                <div class="gallery-stage-wrap">
+                <div class="gallery-stage" id="galleryStage">
+                    <img
+                    src=""
+                    alt="Фотография автомобиля"
+                    class="gallery-stage__img"
+                    id="galleryMainImage"
+                    />
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <div class="lightbox__dialog">
+            <button class="lightbox__close" id="closeLightboxBtn" aria-label="Закрыть полноразмерное фото"></button>
+            <img src="" alt="Полноразмерное фото" class="lightbox__img" id="lightboxImage" />
+            </div>
+        </div>
     </main>
     <footer></footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
