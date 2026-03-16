@@ -22,83 +22,6 @@ button:hover {
     cursor: pointer;
 }
 
-.header_top {
-    background-color: var(--three-color);
-}
-
-.header_top_menu {
-    margin: auto 60px;
-    padding: 48px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header_top_left {
-    display: flex;
-    flex-direction: column;
-}
-
-.header_top_right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header_top_logo {
-    width: 245px;
-    height: 47px;
-}
-
-.header_top_img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-.header_top_brend_img {
-    margin-top: 5px;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-.header_top_cars {
-    width: 64px;
-    height: 64px;
-    background-color: var(--two-color);
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_top_cars {
-    width: auto;
-    height: auto;
-}
-
-select {
-    appearance: none;
-    background: url("img/arrow.png") no-repeat right 20px center;
-    padding-right: 40px;
-}
-
-.city {
-    border: none;
-    width: 590px;
-    background-color: var(--two-color);
-    padding: 20px 20px;
-    border-radius: 20px;
-    margin-left: 20px;
-}
-
-
-.header_bnr {
-    background-color: var(--one-color);
-    border-radius: 20px;
-    padding: 20px 40px;
-    margin-left: 20px;
-}
 
 /*CAR-CARD*/
 
@@ -125,7 +48,7 @@ select {
 }
 
 .image-content {
-    background-image: url(img/card/Скриншот_1.svg);
+    background-image: url(/img/card/Скриншот_1.svg);
     background-repeat: no-repeat;
     padding: clamp(5px, 1.5vw, 23px);
     border-radius: 20px 20px 0 0;
@@ -309,6 +232,8 @@ img {
 }
 
 .stock_carts {
+    flex: 1 1 0;
+    min-width: 0;
     background-color: var(--two-color);
     margin: 30px 1% 0;
     border-radius: 20px;
@@ -319,12 +244,33 @@ img {
     border-radius: 20px;
 }
 
+.cart-inf-brand {
+    margin: 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.brand_year {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.30;
+    opacity: 50%;
+}
+
 .cart-text {
     margin-top: 20px;
 }
 
 .cart-inf-text {
     margin: 0 20px 20px;
+}
+
+.cart-inf-text.address {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.30;
+    opacity: 50%;
 }
 
 /* ОСНОВНАЯ МОДАЛКА */

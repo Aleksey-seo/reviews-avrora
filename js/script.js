@@ -1,16 +1,16 @@
 (() => {
   const images = [
-    "img/GalleryBtn/photo_2025.svg",
-    "img/GalleryBtn/1200x900n.webp",
-    "img/GalleryBtn/1200x900n (1).webp",
+    "/img/GalleryBtn/photo_2025.svg",
+    "/img/GalleryBtn/1200x900n.webp",
+    "/img/GalleryBtn/1200x900n (1).webp",
     "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1600&q=80",
     "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80",
     "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1600&q=80",
     "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1600&q=80",
     "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80",
     "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1600&q=80",
-    "img/GalleryBtn/1200x900n.webp",
-    "img/GalleryBtn/1200x900n (1).webp"
+    "/img/GalleryBtn/1200x900n.webp",
+    "/img/GalleryBtn/1200x900n (1).webp"
   ];
 
   const openGalleryButtons = document.querySelectorAll(".openGalleryBtn");
