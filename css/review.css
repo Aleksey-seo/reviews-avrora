@@ -1,0 +1,412 @@
+body {
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+.review-form {
+    display: flex;
+    max-width: 1800px;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.map-block-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*РЕЙТИНГ*/
+
+.rating-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*контейнер звезд */
+.rating-box__stars {
+  --stars: 5;
+  --percent: calc(var(--rating) / var(--stars) * 100%);
+
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* фон (серые звезды) */
+.rating-box__stars::before {
+  content: "★★★★★";
+  color: #e5e5e5;
+}
+
+/* заливка (оранжевые) */
+.rating-box__stars::after {
+  content: "★★★★★";
+  color: #f5a000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--percent);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* число */
+.rating-box__value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+/*БЛОК КАРТЫ*/
+
+.map {
+    display: none;
+    max-width: 735px;
+    width: 100%;
+    margin-left: 60px;
+    border-radius: 40px;
+    background-color: var(--five-color);
+}
+
+.map-block {
+    margin: 40px;
+}
+
+.map-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+}
+
+/*карта*/
+
+.map-block-2 {
+    width: 100%;
+    max-width: 735px;
+    height: 260px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.map-block-2 iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/*информация*/
+
+.dealer-contacts_list {
+  margin: 0;
+  padding: 0;
+}
+
+.dealer-contacts_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dealer-contacts_label {
+  margin: 0;
+  font-weight: 400;
+  color: #555;
+}
+
+.dealer-contacts_value {
+  margin: 0;
+  color: #222;
+}
+
+.dealer-contacts_value a {
+  color: var(--one-color);
+  text-decoration: none;
+}
+
+.dealer-contacts_value a:hover {
+  text-decoration: underline;
+}
+
+.map-block-3 {
+    margin-bottom: 30px;
+}
+
+.map-block-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-botton {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.stock_next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stock_next-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.30;
+}
+
+.stock_next-svg {
+    width: 20px;
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+/*ФОРМА*/
+
+.form-reviw {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 60px;
+}
+
+.review-form_title {
+  margin: 0 0 18px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1;
+  color: #2b2b2b;
+}
+
+.review-form_body {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form_top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 40px 0 14px;
+}
+
+.review-form_input,
+.review-form_select,
+.review-form_textarea {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #2b2b2b;
+  outline: none;
+}
+
+.review-form_input,
+.review-form_select {
+  height: 44px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+
+.review-form_input::placeholder,
+.review-form_textarea::placeholder {
+  color: #a7a7a7;
+}
+
+.review-form_select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #8d8d8d 50%),
+    linear-gradient(135deg, #8d8d8d 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) calc(50% - 2px),
+    calc(100% - 13px) calc(50% - 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.review-form_select-active {
+  color: #b87d85;
+}
+
+.review-form_upload {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #b3b3b3;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.review-form_file {
+  display: none;
+}
+
+.review-form_upload-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.review-form_textarea {
+  min-height: 150px;
+  resize: vertical;
+  padding: 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.review-form_rating {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.review-form_rating-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating_input {
+  display: none;
+}
+
+.rating_star {
+  font-size: 30px;
+  line-height: 1;
+  color: #d3d3d3;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.rating_star:hover,
+.rating_star:hover ~ .rating_star,
+.rating_input:checked ~ .rating_star {
+  color: #f2c94c;
+}
+
+.review-form_bottom {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.review-form_submit {
+  min-width: 110px;
+  height: 46px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4d57;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.review-form_submit:hover {
+  background: #f33d48;
+}
+
+.review-form_agree {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.review-form_checkbox {
+  display: none;
+}
+
+.review-form_checkbox-custom {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.review-form_checkbox:checked + .review-form_checkbox-custom::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 4px;
+  height: 7px;
+  border-right: 1.5px solid #666;
+  border-bottom: 1.5px solid #666;
+  transform: rotate(45deg);
+}
+
+.review-form_agree-text {
+  font-size: 11px;
+  line-height: 1.3;
+  color: #b3b3b3;
+}
+
+.review-form_link {
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .review-form_title {
+    font-size: 32px;
+  }
+
+  .review-form_top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .review-form_top {
+    grid-template-columns: 1fr;
+  }
+
+  .review-form_rating {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .review-form_bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .review-form_submit {
+    width: 100%;
+  }
+}
+

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Написать отзыв</title>
 
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/review.css">
 
 </head>
 <body>
@@ -41,7 +43,148 @@
             </div>
         </section>
     </header>
-    <main></main>
+    <main>
+        <section class="review-form">
+            <div class="map">
+                <div class="map-block">
+                    <div class="map-block-1">
+                        <div class="map-text">Автосалон Аврора</div>
+                        <div class="map-grade">
+                            <div class="rating-box" style="--rating: 4.7;">
+                                <div class="rating-box__stars"></div>
+                                <div class="rating-box__value">4.7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-block-2">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A59996d7712da6f5cd419d99738b31f8b4e4ec44f25188c918ee92a20a62c2954&amp;source=constructor" width="658" height="290" frameborder="0"></iframe>
+                    </div>
+                    <div class="map-block-3">
+                        <div class="dealer-contacts">
+                            <dl class="dealer-contacts_list">
+                                <div class="dealer-contacts_row">
+                                <dt class="dealer-contacts_label">Адрес:</dt>
+                                <dd class="dealer-contacts_value">г. Ростов-на-Дону, ул. Малиновского, 54А/1</dd>
+                                </div>
+
+                                <div class="dealer-contacts_row">
+                                <dt class="dealer-contacts_label">Телефон:</dt>
+                                <dd class="dealer-contacts_value">
+                                    <a href="tel:+79857777777">+7 (985) 777-77-77</a>
+                                </dd>
+                                </div>
+
+                                <div class="dealer-contacts_row">
+                                <dt class="dealer-contacts_label">Часы работы:</dt>
+                                <dd class="dealer-contacts_value">Ежедневно с 9:00 до 21:00</dd>
+                                </div>
+
+                                <div class="dealer-contacts_row">
+                                <dt class="dealer-contacts_label">Сайт:</dt>
+                                <dd class="dealer-contacts_value">
+                                    <a href="https://autodrive61.ru/" target="_blank" rel="noopener noreferrer">
+                                    https://autodrive61.ru/
+                                    </a>
+                                </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="map-block-4">
+                        <div class="text-botton">170 авто в продаже</div>
+                        <div class="stock_next">
+                            <div class="stock_next-text">Показать все авто</div>
+                            <div class="stock_next-svg"><a href="#"><img src="img/arrow-right.svg" alt="стрелка"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-reviw">
+            <h2 class="review-form__title">Написать отзыв</h2>
+
+            <form class="review-form_body" action="#" method="post">
+                <div class="review-form_top">
+                <input
+                    class="review-form_input"
+                    type="text"
+                    name="name"
+                    placeholder="Имя"
+                >
+
+                <input
+                    class="review-form_input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                >
+
+                <select class="review-form_select" name="city">
+                    <option value="" selected disabled>Выберите город</option>
+                    <option value="moscow">Москва</option>
+                    <option value="voronezh">Воронеж</option>
+                    <option value="krasnodar">Краснодар</option>
+                    <option value="simferopol">Симферополь</option>
+                </select>
+
+                <select class="review-form_select review-form_select-active" name="dealer" id="dealerSelect">
+                    <option value="" selected>Автосалон</option>
+                    <option value="avrora">Аврора</option>
+                    <option value="other">Другой дилер</option>
+                </select>
+                </div>
+
+                <label class="review-form_upload">
+                <input class="review-form_file" type="file" name="photo" accept="image/*">
+                <span class="review-form_upload-icon"><a href="upload-icon"><img src="img/vector.png" alt="фото"></a></span>
+                <span class="review-form_upload-text">Добавить фото</span>
+                </label>
+
+                <textarea
+                class="review-form_textarea"
+                name="review"
+                placeholder="Ваш отзыв"
+                ></textarea>
+
+                <div class="review-form_rating">
+                <span class="review-form_rating-text">Поставьте оценку</span>
+
+                <div class="rating">
+                    <input class="rating_input" type="radio" name="rating" id="star5" value="5">
+                    <label class="rating_star" for="star5">★</label>
+
+                    <input class="rating_input" type="radio" name="rating" id="star4" value="4">
+                    <label class="rating_star" for="star4">★</label>
+
+                    <input class="rating_input" type="radio" name="rating" id="star3" value="3">
+                    <label class="rating_star" for="star3">★</label>
+
+                    <input class="rating_input" type="radio" name="rating" id="star2" value="2">
+                    <label class="rating_star" for="star2">★</label>
+
+                    <input class="rating_input" type="radio" name="rating" id="star1" value="1">
+                    <label class="rating_star" for="star1">★</label>
+                </div>
+                </div>
+
+                <div class="review-form_bottom">
+                <button class="review-form_submit" type="submit">Опубликовать</button>
+
+                <label class="review-form_agree">
+                    <input class="review-form_checkbox" type="checkbox" name="agree">
+                    <span class="review-form_checkbox-custom"></span>
+                    <span class="review-form_agree-text">
+                    Я принимаю условия
+                    <a href="#" class="review-form_link">Политики конфиденциальности</a>
+                    </span>
+                </label>
+                </div>
+            </form>
+            </div>
+        </section>
+
+    </main>
     <footer></footer>
+
+    <script src="js/formMap.js"></script>
 </body>
 </html>
