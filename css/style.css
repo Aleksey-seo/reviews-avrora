@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: var(--font-family);
+}
+
 button {
   all: unset;
 }
@@ -11,6 +15,11 @@ button {
 button:hover {
     background-color: #6d6c6ce6;
     cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -52,7 +61,6 @@ button:hover {
 
 .image-content_title {
     color: var(--two-color);
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 24px;
 }
@@ -120,7 +128,6 @@ button:hover {
     margin-left: 20%;
     z-index: 2;
     color: var(--two-color);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: clamp(12px, 1.5vw, 14px);
@@ -154,7 +161,6 @@ img {
     justify-content: space-between;
     padding: 11px 32px 11px 32px;
     border-bottom: 1px solid #e5e5e5;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: clamp(12px, 1.5vw,18px);
 }
@@ -180,7 +186,6 @@ img {
 }
 
 .stock_text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 1;
@@ -195,7 +200,6 @@ img {
     display: flex;
     align-items: center;
     margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -241,7 +245,6 @@ img {
     justify-content: space-between;
 }
 .brand_year {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.30;
@@ -257,7 +260,6 @@ img {
 }
 
 .cart-inf-text.address {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.30;

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто в наличии</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+    <header>
+        <section class="header_top">
+            <div class="header_top_menu">
+                <div class="header_top_left">
+                    <div class="header_top_logo"><img class="header_top_img" src="img/brend.svg" alt="brand"></div>
+                    
+                    <div class="header_top_brend_img">
+                        отзывы
+                    </div> 
+                </div>
+                    
+                <div class="header_top_right">
+                    <a class="header_top_cars">
+                        <img class="img_top_cars" src="img/favourite.svg" alt="favourite" >
+                    </a>
+                    <div class="form_grou">
+                        <select class="city" name="city">
+                            <option value="rostov">Ростов-на-Дону</option>
+                            <option value="voronezh">Воронеж</option>
+                            <option value="krasnodar">Краснодар</option>
+                            <option value="simferopl">Симферополь</option>
+                            <option value="lnr">ЛНР</option>
+                            <option value="dnr">ДНР</option>
+                        </select>
+                    </div>
+                    <div class="header_button">
+                        <a href="new_review.html">
+                            <button class="header_bnr">Разместить объявление</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="used_filter">
+            <div class="used_filter-wrap">
+                <div class="used_filter-top">
+                <div class="used_filter-top__head">
+                    <div class="used_filter-top__title-row">
+                    <h2 class="used_filter-top__title">Автосалон Аврора</h2>
+
+                    <div class="rating-box" style="--rating: 4.7;">
+                        <div class="rating-box_stars"></div>
+                        <div class="rating-box_value">4.7</div>
+                    </div>
+                    </div>
+
+                    <a href="#" class="used_filter-top__link">
+                    Перейти к отзывам
+                    <span class="used_filter-top__link-arrow"><img src="img/arrow-right.svg" class="img__filter-top" alt="перейти к отзывам"></span>
+                    </a>
+                </div>
+
+                <dl class="used_filter-top__info">
+                    <div class="used_filter-top__info-row">
+                    <dt>Адрес:</dt>
+                    <dd>г.Ростов-на-Дону, ул. Малиновского, 54А/1</dd>
+                    </div>
+
+                    <div class="used_filter-top__info-row">
+                    <dt>Телефон:</dt>
+                    <dd><a href="tel:+79857777777">+7 (985) 777-77-77</a></dd>
+                    </div>
+
+                    <div class="used_filter-top__info-row">
+                    <dt>Часы работы:</dt>
+                    <dd>Ежедневно с 9:00 до 21:00</dd>
+                    </div>
+
+                    <div class="used_filter-top__info-row">
+                    <dt>Сайт:</dt>
+                    <dd>
+                        <a href="https://autodrive61.ru/" target="_blank" rel="noopener noreferrer">
+                        https://autodrive61.ru/
+                        </a>
+                    </dd>
+                    </div>
+                </dl>
+                </div>
+
+                <div class="used_filter-form-box">
+                <h3 class="used_filter-form-box__title">Подбор автомобиля</h3>
+
+                <form class="used_filter-form" action="#" method="get">
+                    <div class="used_filter-grid">
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="brand">Марка</label>
+                        <select class="used_filter-select used_filter-select--active" id="brand" name="brand">
+                        <option value="haval" selected>Haval</option>
+                        <option value="chery">Chery</option>
+                        <option value="geely">Geely</option>
+                        <option value="exeed">Exeed</option>
+                        </select>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="model">Модель</label>
+                        <select class="used_filter-select" id="model" name="model">
+                        <option value="" selected>Выберите модель</option>
+                        <option value="f7">F7</option>
+                        <option value="m6">M6</option>
+                        <option value="dargo">Dargo</option>
+                        </select>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="generation">Поколение</label>
+                        <select class="used_filter-select" id="generation" name="generation">
+                        <option value="" selected>Выберите поколение</option>
+                        <option value="1">1 поколение</option>
+                        <option value="2">2 поколение</option>
+                        </select>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="year">Год</label>
+                        <select class="used_filter-select" id="year" name="year">
+                        <option value="" selected>Выберите год</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        </select>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="engine">Двигатель</label>
+                        <select class="used_filter-select" id="engine" name="engine">
+                        <option value="" selected>Выберите двигатель</option>
+                        <option value="1.5t">1.5 Turbo</option>
+                        <option value="2.0t">2.0 Turbo</option>
+                        </select>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="drive">Привод</label>
+                        <select class="used_filter-select" id="drive" name="drive">
+                        <option value="" selected>Выберите привод</option>
+                        <option value="fwd">Передний</option>
+                        <option value="awd">Полный</option>
+                        </select>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="engine-volume-from">Объем в л</label>
+                        <div class="used_filter-range">
+                        <input
+                            class="used_filter-input used_filter-input--range"
+                            type="text"
+                            id="engine-volume-from"
+                            name="engine_volume_from"
+                            placeholder="от"
+                        >
+                        <input
+                            class="used_filter-input used_filter-input--range"
+                            type="text"
+                            name="engine_volume_to"
+                            placeholder="до"
+                        >
+                        </div>
+                    </div>
+
+                    <div class="used_filter-field">
+                        <label class="used_filter-label" for="mileage-from">Пробег в км</label>
+                        <div class="used_filter-range">
+                        <input
+                            class="used_filter-input used_filter-input--range"
+                            type="text"
+                            id="mileage-from"
+                            name="mileage_from"
+                            placeholder="от"
+                        >
+                        <input
+                            class="used_filter-input used_filter-input--range"
+                            type="text"
+                            name="mileage_to"
+                            placeholder="до"
+                        >
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="used_filter-actions">
+                    <button class="used_filter-submit" type="submit">Найти авто</button>
+                    <button class="used_filter-reset" type="reset">Сбросить <img src="img/restart.png" alt="Сбросить"></button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-cars">
+            <div class="all-cars_blocks">
+                <h3>Все автомобили в наличии</h3>
+                <div class="all-cars_card">
+
+                    <div class="all-cars_card-gallery">
+                        <div class="all-cars_card-main-image">
+                        <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I">
+                        </div>
+
+                        <div class="all-cars_card-thumbs">
+                        <a href="#" class="all-cars_card-thumb">
+                            <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion вид 1">
+                        </a>
+                        <a href="#" class="all-cars_card-thumb">
+                            <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion вид 2">
+                        </a>
+                        <a href="#" class="all-cars_card-thumb">
+                            <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion вид 3">
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="cars_card-inf">
+
+                        <div class="all-cars_card-center">
+
+                            <div class="all-cars_card-info">
+                                <div class="all-cars_card-info-top">
+                                    <div class="all-cars_card-title">Haval Jolion I</div>
+                                    <div class="all-cars_card-year">2023</div>
+                                </div>
+
+                                <div class="all-cars_cards">
+                                <div class="all-cars_card-subtitle">Комплектация Elite ・ Серый</div>
+                                <div class="all-cars_card-status">
+                                    <span>Новый</span>
+                                    <span>В наличии</span>
+                                </div>
+                                </div>
+
+                                <div class="all-cars_card-specs">
+                                    <span>1.5 л, 143 л.с</span>
+                                    <span>передний привод</span>
+                                </div>
+
+                                <div class="all-cars_card-specs">
+                                    <span>Внедорожник 5 дв.</span>
+                                    <span>Робот</span>
+                                </div>
+                            </div>
+
+                            <div class="all-cars_card-price-block">
+                                <div class="all-cars_card-price">от 1 800 000₽</div>
+                                <div class="all-cars_card-old-price">2 100 000 без скидок</div>
+
+                                <div class="all-cars_card-discount-title">Скидки</div>
+
+                                <dl class="all-cars_card-discounts">
+                                <div class="all-cars_card-discount-row">
+                                    <dt>В кредит</dt>
+                                    <dd>-50 000₽</dd>
+                                </div>
+
+                                <div class="all-cars_card-discount-row">
+                                    <dt>В трейд-ин</dt>
+                                    <dd>-50 000₽</dd>
+                                </div>
+
+                                <div class="all-cars_card-discount-row">
+                                    <dt>Максимальная</dt>
+                                    <dd>-50 000₽</dd>
+                                </div>
+                                </dl>
+                            </div>
+
+                        </div>
+                        <div class="cars-inf-btn">
+                            <div class="all-cars_card-actions">
+                                <button class="all-cars_card-btn all-cars_card-btn--primary"><a href="#">Узнать цену</a></button>
+
+                                <button class="all-cars_card-btn all-cars_card-btn--secondary"><a href="#">Перейти к объявлению</a></button>
+
+                            </div>
+
+                            <button class="all-cars_card-favorite" type="button" aria-label="Добавить в избранное">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 21s-6.716-4.35-9.192-8.003C.976 10.299 2.2 6.5 6.01 6.5c2.05 0 3.21 1.104 3.99 2.244C10.78 7.604 11.94 6.5 13.99 6.5c3.81 0 5.034 3.799 3.202 6.497C18.716 16.65 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
