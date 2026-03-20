@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картоска машины</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+    <header>
+        <section class="header_top">
+            <div class="header_top_menu">
+                <div class="header_top_left">
+                    <div class="header_top_logo"><img class="header_top_img" src="img/brend.svg" alt="brand"></div>
+                    
+                    <div class="header_top_brend_img">
+                        отзывы
+                    </div> 
+                </div>
+                    
+                <div class="header_top_right">
+                    <a class="header_top_cars">
+                        <img class="img_top_cars" src="img/favourite.svg" alt="favourite" >
+                    </a>
+                    <div class="form_grou">
+                        <select class="city" name="city">
+                            <option value="rostov">Ростов-на-Дону</option>
+                            <option value="voronezh">Воронеж</option>
+                            <option value="krasnodar">Краснодар</option>
+                            <option value="simferopl">Симферополь</option>
+                            <option value="lnr">ЛНР</option>
+                            <option value="dnr">ДНР</option>
+                        </select>
+                    </div>
+                    <div class="header_button">
+                        <a href="new_review.html">
+                            <button class="header_bnr">Разместить объявление</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="car-cad-main">
+            <article class="car-card">
+                <div class="car-card__inner">
+                    <!-- Левая колонка: галерея -->
+                    <div class="car-card__gallery" aria-label="Галерея автомобиля">
+                        <div class="car-card__main-image">
+                            <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, вид спереди">
+                        </div>
+
+                        <div class="car-card__thumbs">
+                            <a href="#" class="car-card__thumb" aria-label="Фото автомобиля 1">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, вид сбоку">
+                            </a>
+
+                            <a href="#" class="car-card__thumb" aria-label="Фото автомобиля 2">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, вид спереди">
+                            </a>
+
+                            <a href="#" class="car-card__thumb" aria-label="Фото автомобиля 3">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, вид под углом">
+                            </a>
+
+                            <a href="#" class="car-card__thumb" aria-label="Фото автомобиля 4">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, вид сбоку">
+                            </a>
+
+                            <a href="#" class="car-card__thumb br-left" aria-label="Фото автомобиля 5">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, вид сзади">
+                            </a>
+
+                            <a href="#" class="car-card__thumb" aria-label="Фото автомобиля 6">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, задняя часть">
+                            </a>
+
+                            <a href="#" class="car-card__thumb" aria-label="Фото автомобиля 7">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, моторный отсек">
+                            </a>
+
+                            <a href="#" class="car-card__thumb car-card__thumb--more pictures_img openGalleryBtn" aria-label="Показать еще 10 фото">
+                                <img src="img/all_cars/Frame 715.svg" alt="Haval Jolion I, 2022, интерьер">
+                                <span class="car-card__thumb-overlay">Еще 10 фото</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Правая колонка -->
+                    <div class="car-card__content">
+                        <!-- Верхняя строка -->
+                        <div class="car-card__top">
+                            <div class="car-card__head">
+                                <h1 class="car-card__title">Haval Jolion I, 2022</h1>
+
+                                <button class="car-card__reserve-btn" type="button">
+                                    Забронировать
+                                </button>
+                            </div>
+
+                            <div class="car-card__price-box">
+                                <div class="car-card__price-wrap">
+                                    <p class="car-card__price">1 200 000₽</p>
+                                    <p class="car-card__price-note">1 020 000₽ со скидками</p>
+                                </div>
+
+                                <button class="car-card__favorite" type="button" aria-label="Добавить в избранное">
+                                    <img src="img/favourite.svg" class="car-card__favorite_img" alt="фаворит">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Характеристики / Владение -->
+                        <div class="car-card__info-row">
+                            <section class="car-card__info-block" aria-labelledby="ownership-title">
+                                <h2 class="car-card__block-title" id="ownership-title">Владение</h2>
+
+                                <ul class="car-card__spec-list">
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Год выпуска</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">2022</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Пробег</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">64 914 км</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Владельцы</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">2 владельца</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Год выпуска</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">2022</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">ПТС</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">Оригинал/Электронный</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="car-card__info-block" aria-labelledby="features-title">
+                                <h2 class="car-card__block-title" id="features-title">Характеристики</h2>
+
+                                <ul class="car-card__spec-list">
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Комплектация</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">Elite</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Двигатель</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">1.5 л, 143 л.с., бензин</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">КПП</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">Робот</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Привод</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">Передний</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Кузов</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">Внедорожник 5 дв.</span>
+                                    </li>
+
+                                    <li class="car-card__spec-item">
+                                        <span class="car-card__spec-name">Цвет</span>
+                                        <span class="car-card__spec-dots"></span>
+                                        <span class="car-card__spec-value">Черный</span>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <!-- Скидки -->
+                        <section class="car-card__discounts" aria-labelledby="discounts-title">
+                            <h2 class="car-card__block-title" id="discounts-title">Скидки</h2>
+
+                            <ul class="car-card__spec-list car-card__spec-list--discounts">
+                                <li class="car-card__spec-item">
+                                    <span class="car-card__spec-name">В кредит</span>
+                                    <span class="car-card__spec-dots"></span>
+                                    <span class="car-card__spec-value car-card__spec-value--accent">-50 000₽</span>
+                                </li>
+
+                                <li class="car-card__spec-item">
+                                    <span class="car-card__spec-name">В трейд-ин</span>
+                                    <span class="car-card__spec-dots"></span>
+                                    <span class="car-card__spec-value car-card__spec-value--accent">-50 000₽</span>
+                                </li>
+
+                                <li class="car-card__spec-item">
+                                    <span class="car-card__spec-name">Максимальная</span>
+                                    <span class="car-card__spec-dots"></span>
+                                    <span class="car-card__spec-value car-card__spec-value--accent">-50 000₽</span>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Описание -->
+                        <section class="car-card__description" aria-labelledby="description-title">
+                            <h2 class="car-card__block-title" id="description-title">Описание</h2>
+
+                            <div class="car-card__text">
+                                <p>
+                                    Haval Jolion 2022 года — это современный компактный кроссовер,
+                                    который удачно сочетает эффектный дизайн, продуманный функционал
+                                    и доступную цену. Модель уверенно завоевывает симпатии российских
+                                    водителей, предлагая оптимальное соотношение цены, комфорта и технологий.
+                                </p>
+
+                                <p>
+                                    Автомобиль подходит как для городских поездок, так и для путешествий,
+                                    сочетая в себе стиль, технологии и надежность.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="cars_stock">
+            <div class="stock_content">
+                <div class="stock_block-1">
+                    <div class="stock_text">Авто в наличии</div>
+                    <div class="stock_next"> 
+                        <div class="stock_next-text">оказать все авто</div><div class="stock_next-svg"><a href="#"><img src="img/arrow-right.svg" class="stock_next-svg_img" alt="оказать все авто"></a></div>
+                    </div>
+                </div>
+                <div class="stock_block-2">
+                    <div class="stock_carts">
+                        <div class="cart-img"><img src="img/cars_stock/cars.svg" alt=""></div>
+                        <div class="cart-text">
+                            <div class="cart-inf-brand"> 
+                                <div class="brand_name">Haval F7</div>
+                                <div class="brand_year">2025</div>
+                            </div>
+                            <div class="cart-inf-text"><b>от 1 020 000₽</b></div>
+                            <div class="cart-inf-text address">Москва, Сокольнический вал, 1Л</div>
+                        </div>
+                    </div>
+                    <div class="stock_carts">
+                        <div class="cart-img"><img src="img/cars_stock/cars.svg" alt=""></div>
+                        <div class="cart-text">
+                            <div class="cart-inf-brand"> 
+                                <div class="brand_name">Haval F7</div>
+                                <div class="brand_year">2025</div>
+                            </div>
+                            <div class="cart-inf-text"><b>от 1 020 000₽</b></div>
+                            <div class="cart-inf-text address">Москва, Сокольнический вал, 1Л</div>
+                        </div>
+                    </div>
+                    <div class="stock_carts">
+                        <div class="cart-img"><img src="img/cars_stock/cars.svg" alt=""></div>
+                        <div class="cart-text">
+                            <div class="cart-inf-brand"> 
+                                <div class="brand_name">Haval F7</div>
+                                <div class="brand_year">2025</div>
+                            </div>
+                            <div class="cart-inf-text"><b>от 1 020 000₽</b></div>
+                            <div class="cart-inf-text address">Москва, Сокольнический вал, 1Л</div>
+                        </div>
+                    </div>
+                    <div class="stock_carts">
+                        <div class="cart-img"><img src="img/cars_stock/cars.svg" alt=""></div>
+                        <div class="cart-text">
+                            <div class="cart-inf-brand"> 
+                                <div class="brand_name">Haval F7</div>
+                                <div class="brand_year">2025</div>
+                            </div>
+                            <div class="cart-inf-text"><b>от 1 020 000₽</b></div>
+                            <div class="cart-inf-text address">Москва, Сокольнический вал, 1Л</div>
+                        </div>
+                    </div>
+                    <div class="stock_carts">
+                        <div class="cart-img"><img src="img/cars_stock/cars.svg" alt=""></div>
+                        <div class="cart-text">
+                            <div class="cart-inf-brand"> 
+                                <div class="brand_name">Haval F7</div>
+                                <div class="brand_year">2025</div>
+                            </div>
+                            <div class="cart-inf-text"><b>от 1 020 000₽</b></div>
+                            <div class="cart-inf-text address">Москва, Сокольнический вал, 1Л</div>
+                        </div>
+                    </div>
+                    <div class="stock_carts">
+                        <div class="cart-img"><img src="img/cars_stock/cars.svg" alt=""></div>
+                        <div class="cart-text">
+                            <div class="cart-inf-brand"> 
+                                <div class="brand_name">Haval F7</div>
+                                <div class="brand_year">2025</div>
+                            </div>
+                            <div class="cart-inf-text"><b>от 1 020 000₽</b></div>
+                            <div class="cart-inf-text address">Москва, Сокольнический вал, 1Л</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- МОДАЛКА ГАЛЕРЕИ -->
+        <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+            <div class="gallery-modal__dialog" role="dialog" aria-modal="true" aria-label="Галерея автомобиля">
+            <button class="gallery-modal__close" id="closeGalleryBtn" aria-label="Закрыть галерею"></button>
+
+            <div class="gallery-modal__content">
+                <aside class="gallery-sidebar">
+                <button class="gallery-sidebar__arrow gallery-sidebar__arrow--up" id="thumbPrevBtn" aria-label="Предыдущее фото"></button>
+
+                <div class="gallery-sidebar__track">
+                    <ul class="gallery-thumbs" id="galleryThumbs"></ul>
+                </div>
+
+                <button class="gallery-sidebar__arrow gallery-sidebar__arrow--down" id="thumbNextBtn" aria-label="Следующее фото"></button>
+                </aside>
+
+                <div class="gallery-stage-wrap">
+                <div class="gallery-stage" id="galleryStage">
+                    <img
+                    src=""
+                    alt="Фотография автомобиля"
+                    class="gallery-stage__img"
+                    id="galleryMainImage"
+                    />
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <div class="lightbox__dialog">
+            <button class="lightbox__close" id="closeLightboxBtn" aria-label="Закрыть полноразмерное фото"></button>
+            <img src="" alt="Полноразмерное фото" class="lightbox__img" id="lightboxImage" />
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <footer></footer>
+</body>
+</html>

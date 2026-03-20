@@ -73,7 +73,6 @@ a {
   font-size: 12px;
   line-height: 1.2;
   text-decoration: none;
-  color: #5f5f5f;
   white-space: nowrap;
 }
 
@@ -97,14 +96,12 @@ a {
   margin: 0 0 6px;
   font-size: 13px;
   line-height: 1.2;
-  color: #666;
 }
 
 .used_filter-top__info-row dd {
   margin: 0;
   font-size: 15px;
   line-height: 1.35;
-  color: #3a3a3a;
 }
 
 .img__filter-top {
@@ -112,7 +109,7 @@ a {
 }
 
 .used_filter-top__info-row a {
-  color: var(--one-color, #fa3b50);
+  color: var(--one-color);
   text-decoration: underline;
 }
 
@@ -215,7 +212,7 @@ a {
   padding: 0 22px;
   border: none;
   border-radius: 12px;
-  background: var(--one-color, #fa3b50);
+  background: var(--one-color);
   color: #fff;
   text-align: center;
   font-family: inherit;
@@ -226,7 +223,7 @@ a {
 }
 
 .used_filter-submit:hover {
-  background: #ef3248;
+  background: var(--btn-hover-color);
 }
 
 .used_filter-reset {
@@ -335,7 +332,7 @@ a {
 }
 
 .all-cars_card:hover {
-    background-color: var(--three-color);
+    background-color: var(--five-color);
     cursor: pointer;
 }
 
@@ -399,7 +396,7 @@ a {
 
 .all-cars_card-info {
   width: 100%;
-  margin-right: 7vw;
+  margin-right: 9vw;
 }
 
 .all-cars_card-info-top {
@@ -419,6 +416,7 @@ a {
 .all-cars_cards {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .all-cars_card-year {
@@ -443,14 +441,17 @@ a {
   color: var(--one-color);
 }
 
+.all-cars_cards-specific {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
 .all-cars_card-specs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 16px;
   margin-bottom: 6px;
-  font-size: 13px;
   line-height: 1.35;
-  color: #3a3a3a;
 }
 
 .all-cars_card-actions {
@@ -469,23 +470,23 @@ a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1;
   font-weight: 700;
   transition: 0.2s ease;
 }
 
 .all-cars_card-btn--primary {
-  background: #ff4154;
+  background: var(--one-color);
   color: #fff;
 }
 
 .all-cars_card-btn--primary:hover {
-  background: #f03549;
+  background: var(--btn-hover-color);
 }
 
 .all-cars_card-btn--secondary {
-  background: #e3e3e3;
+  background: var(--eight-color);
   color: #1f1f1f;
 }
 
@@ -503,34 +504,31 @@ a {
 .all-cars_card-price-block {
   max-width: 250px;
   width: 100%;
-  padding-top: 2px;
 }
 
 .all-cars_card-price {
-  margin-bottom: 4px;
   font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
 }
 
 .all-cars_card-old-price {
-  margin-bottom: 12px;
-  font-size: 11px;
-  line-height: 1.3;
-  color: #7a7a7a;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .all-cars_card-discount-title {
-  margin-bottom: 8px;
-  font-size: 13px;
+  margin: 20px 0 10px;
+  font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
-  color: #1f1f1f;
 }
 
 .all-cars_card-discounts {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .all-cars_card-discount-row {
@@ -542,23 +540,27 @@ a {
 
 .all-cars_card-discount-row dt,
 .all-cars_card-discount-row dd {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.35;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .all-cars_card-discount-row dt {
-  color: #9a9a9a;
+  color: #252525;
+  opacity: 50%;
 }
 
 .all-cars_card-discount-row dd {
-  color: #ff5a68;
+  color: var(--one-color);
   white-space: nowrap;
 }
 
 .cars_card-inf {
     max-width: 1093px;
+    min-width: 710px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* избранное */
@@ -566,10 +568,10 @@ a {
   align-self: flex-end;
   width: 52px;
   height: 52px;
+  margin-left: 10px;
   border: none;
   border-radius: 12px;
-  background: #f1f1f1;
-  color: #4a4a4a;
+  background: var(--eight-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -620,13 +622,22 @@ a {
 
   .all-cars_card-center,
   .all-cars_card-price-block {
-    flex: none;
+    flex-direction: column;
     min-width: 0;
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .all-cars_card-actions {
+    flex-direction: column;
   }
 
   .all-cars_card-favorite {
     align-self: flex-start;
+  }
+
+  .cars_card-inf {
+    min-width: 100%;
   }
 }
 

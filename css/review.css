@@ -202,7 +202,7 @@ a {
 .review-form_top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 32px;
   margin: 40px 0 14px;
 }
 
@@ -341,7 +341,7 @@ a {
 }
 
 .review-form_submit:hover {
-  background: #f33d48;
+  background: var(--btn-hover-color);
 }
 
 .review-form_agree {
@@ -399,6 +399,10 @@ a {
 }
 
 @media (max-width: 640px) {
+  .review-form {
+    flex-direction: column;
+  }
+
   .review-form_top {
     grid-template-columns: 1fr;
   }

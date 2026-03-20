@@ -4,7 +4,7 @@ button {
 }
 
 button:hover {
-    background-color: #6d6c6ce6;
+    background-color: var(--btn-hover-color);
     cursor: pointer;
 }
 
@@ -60,6 +60,10 @@ button:hover {
     align-items: center;
 }
 
+.header_top_cars:hover {
+    background-color: var(--btn-hover-color);
+}
+
 .img_top_cars {
     width: auto;
     height: auto;
@@ -86,4 +90,29 @@ select {
     border-radius: 20px;
     padding: 20px 40px;
     margin-left: 20px;
+}
+
+@media (max-width: 760px) {
+    .header_top_logo {
+    width: 150px;
+    }
+
+    .header_top_cars {
+    display: none;
+    }
+
+    .city {
+    width: 22vw;
+    border-radius: 15px;
+    padding: 15px 20px;
+    }
+
+    .header_bnr {
+        border-radius: 15px;
+        padding: 15px 20px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+
 }
