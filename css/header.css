@@ -93,6 +93,21 @@ select {
 }
 
 @media (max-width: 760px) {
+    .map {
+    width: auto;
+    margin: 0 60px;
+    }
+
+    .map-reviews {
+    flex-direction: column;
+    }
+
+    .reviews {
+    margin: 40px 60px;   
+    }
+}
+
+@media (max-width: 760px) {
     .header_top_logo {
     width: 150px;
     }
