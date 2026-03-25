@@ -12,6 +12,13 @@ a {
   color: inherit;
 }
 
+
+/*СЕКЦИЯ ДЛЯ КАРТЫ АВТОСАЛОНА*/
+
+.user-cart {
+    margin: 0 60px;
+}
+
 /*КАРТОЧКА МАШИНЫ*/
 
 *,
@@ -20,8 +27,11 @@ a {
     box-sizing: border-box;
 }
 
-.car-card {
+.car-cad-main {
     margin: 40px 60px;
+}
+
+.car-card {  
     overflow: hidden;
 }
 
@@ -65,8 +75,8 @@ a {
     width: 25%;
     aspect-ratio: 1.1 / 1;
     overflow: hidden;
-    border-top: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
+    border-top: 1px solid var(--two-color);
+    border-right: 1px solid var(--two-color);
 }
 
 .car-card__thumb:nth-child(4n) {
@@ -427,8 +437,47 @@ img {
     }
 }
 
+@media (max-width: 980px) {
+
+    .cars_stock {
+        max-width: 587px;
+        margin: auto;
+    }
+
+    .used_content {
+    margin: 40px 60px 0;
+    }
+
+    .stock_block-1, 
+    .stock_block-2 {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .car-content {
+        margin-bottom: 0;
+    }
+
+    .cart-img {
+        max-width: 100%;
+    }
+
+    .stock_carts {
+        border-radius: 50px 50px 20px 20px;
+    }
+}
+
 /* Мобильный */
 @media (max-width: 767px) {
+
+    .used_cart-top__info {
+        grid-template-columns: 1fr;
+    }
+
+    .used_cart-top__head {
+        flex-direction: column;
+    }
+
     .car-card {
         border-radius: 10px;
     }
@@ -485,6 +534,11 @@ img {
 
     .car-card__text p {
         font-size: 13px;
+    }
+
+    .cars_stock {
+        max-width: 587px;
+        margin: auto 60px;
     }
 }
 

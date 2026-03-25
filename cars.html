@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Картоска машины</title>
+    <title>Карточка машины</title>
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/used_cart.css">
     <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
     <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
@@ -46,6 +48,83 @@
         </section>
     </header>
     <main>
+
+        <section class="breadcrumbs">
+             <nav class="breadcrumbs__navigat" aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="/">Главная</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="/catalog/">Подбор автомобилей в наличии</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="/catalog/haval/">Haval</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="/catalog/haval/jolion/">Jolion</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="/catalog/haval/jolion/jolion-1/">Jolion 1</a>
+                    </li>
+
+                    <li class="breadcrumbs__item" aria-current="page">
+                    <span class="breadcrumbs__current">Haval Jolion 2022</span>
+                    </li>
+                </ol>
+            </nav>
+        </section>
+
+        <section class="user-cart">
+            <div class="used_cart-top">
+                    <div class="used_cart-top__head">
+                        <div class="used_cart-top__title-row">
+                            <h2 class="used_cart-top__title">Автосалон Аврора</h2>
+
+                            <div class="rating-box" style="--rating: 4.7;">
+                                <div class="rating-box_stars"></div>
+                                <div class="rating-box_value">4.7</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="used_cart-top__link">
+                        Перейти к отзывам
+                        <span class="used_cart-top__link-arrow"><img src="img/arrow-right.svg" class="img__filter-top" alt="перейти к отзывам"></span>
+                        </a>
+                    </div>
+
+                    <dl class="used_cart-top__info">
+                        <div class="used_cart-top__info-row">
+                        <dt>Адрес:</dt>
+                        <dd>г.Ростов-на-Дону, ул. Малиновского, 54А/1</dd>
+                        </div>
+
+                        <div class="used_cart-top__info-row">
+                        <dt>Телефон:</dt>
+                        <dd><a href="tel:+79857777777">+7 (985) 777-77-77</a></dd>
+                        </div>
+
+                        <div class="used_cart-top__info-row">
+                        <dt>Часы работы:</dt>
+                        <dd>Ежедневно с 9:00 до 21:00</dd>
+                        </div>
+
+                        <div class="used_cart-top__info-row">
+                        <dt>Сайт:</dt>
+                        <dd>
+                            <a href="https://autodrive61.ru/" target="_blank" rel="noopener noreferrer">
+                            https://autodrive61.ru/
+                            </a>
+                        </dd>
+                        </div>
+                    </dl>
+            </div>
+        </section>
+
         <section class="car-cad-main">
             <article class="car-card">
                 <div class="car-card__inner">

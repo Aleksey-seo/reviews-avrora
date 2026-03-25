@@ -22,7 +22,6 @@ a {
   color: inherit;
 }
 
-
 /*CAR-CARD*/
 
 .used_content,
@@ -264,4 +263,50 @@ img {
     font-size: 16px;
     line-height: 1.30;
     opacity: 50%;
+}
+
+@media (max-width: 980px) {
+    .car-content {
+        flex-direction: column;
+    }
+
+    .car-card {
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    .cars_stock {
+        max-width: 587px;
+        margin: auto;
+    }
+
+    .used_content {
+    margin: 40px 60px 0;
+    }
+
+    .stock_block-1, 
+    .stock_block-2 {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .car-content {
+        margin-bottom: 0;
+    }
+
+    .cart-img {
+        max-width: 100%;
+    }
+
+    .stock_carts {
+        border-radius: 50px 50px 20px 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    
+    .cars_stock {
+        max-width: 587px;
+        margin: auto 60px;
+    }
 }
