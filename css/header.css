@@ -12,6 +12,7 @@ button:hover {
 
 .header_top {
     background-color: var(--three-color);
+    margin-bottom: 40px;
 }
 
 .header_top_menu {
@@ -125,3 +126,37 @@ select {
 
 
 }
+
+@media (max-width: 760px) {
+    .header_top_menu {
+        margin: auto 40px;
+        flex-direction: column;
+    }
+
+    .header_top_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .header_top_logo {
+    width: 24vw;
+    min-width: 100px;
+    }
+
+    .city {
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    width: 51vw;
+    }
+
+    .header_top_right {
+    margin-top: 10px;
+    }
+
+
+
+}
+

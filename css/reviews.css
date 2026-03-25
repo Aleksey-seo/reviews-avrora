@@ -15,10 +15,15 @@ a {
 /*ОСНОВНОЙ БЛОК*/
 
 .map-reviews {
+    margin: 0 60px;
+  }
+
+.map-reviews {
     display: flex;
     max-width: 1800px;
     width: 100%;
     padding: 0;
+    margin-top: 40px;
 }
 
 /*БЛОК КАРТЫ*/
@@ -27,7 +32,6 @@ a {
     max-width: 735px;
     width: 100%;
     height: 100%;
-    margin-left: 60px;
     border-radius: 40px;
     background-color: var(--five-color);
 }
@@ -181,7 +185,6 @@ a {
 .reviews {
     width: 100%;
     max-width: 1022px;
-    margin: 0 60px;
     padding: clamp(18px, 2.5vw, 24px) clamp(12px, 2vw, 20px);
     box-sizing: border-box;
     border-radius: 20px 40px;
@@ -204,7 +207,7 @@ a {
 .reviews__title {
   margin: 0;
   font-weight: 400;
-  font-size: clamp(24px, 3vw, 32px);
+  font-size: clamp(20px, 3vw, 32px);
   line-height: 1;
 }
 
@@ -310,6 +313,9 @@ a {
 
 /* tablet */
 @media (max-width: 768px) {
+    .reviews {
+      margin-top: 20px;
+    }
     .map-reviews {
     flex-direction: column;
     }
@@ -326,12 +332,10 @@ a {
 
   .map {
     width: auto;
-    margin: 0 60px;
     }
 
     .reviews {
     width: auto;
-    margin: 40px 60px;   
     }
 
     .map-block-1 {
@@ -343,6 +347,16 @@ a {
 @media (max-width: 480px) {
   .reviews {
     padding: 16px 10px;
+  }
+
+  .map-reviews {
+    width: 310px;
+    margin: 0 40px;
+  }
+
+  .map-text,
+  .text-botton {
+    font-size: 20px;
   }
 
   .reviews__item {

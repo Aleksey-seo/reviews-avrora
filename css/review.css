@@ -407,12 +407,18 @@ a {
     margin-left: 0px !important;
   }
 
+  .review-form_input,
+  .review-form_textarea {
+    width: 282px;
+  }
+
   .review-form_submit {
     padding: 0 0 0 20px;
   }
 
   .review-form {
     flex-direction: column;
+    margin: 20px 40px;
   }
 
   .review-form_top {

@@ -307,6 +307,34 @@ img {
     
     .cars_stock {
         max-width: 587px;
-        margin: auto 60px;
+        margin: auto 40px;
+    }
+
+    .used_content {
+        margin: 20px 40px;
+    }
+
+    .image-content-block {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .image-content_title {
+        font-size: 20px;
+    }
+
+    .image-content_grade {
+        width: 45px;
+        height: 40px;
+    }
+
+    .pictures_img-text {
+        margin-top: 35%;
+        margin-left: 20%;
+    }
+    .btn-reviews,
+    .btn-map {
+        padding: 15px;
+        border-radius: 15px;
     }
 }
