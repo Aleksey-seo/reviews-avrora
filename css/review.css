@@ -178,6 +178,7 @@ a {
 .form-reviw {
     max-width: 1080px;
     width: 100%;
+    margin-right: 40px;
 }
 
 .review-form_title {
@@ -263,6 +264,7 @@ a {
 }
 
 .review-form_textarea {
+  width: 98%;
   min-height: 150px;
   resize: vertical;
   padding: 14px;
@@ -404,7 +406,6 @@ a {
 
   .form-reviw {
     margin-top: 40px;
-    margin-left: 0px !important;
   }
 
   .review-form_input,

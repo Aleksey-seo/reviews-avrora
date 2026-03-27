@@ -91,6 +91,7 @@ select {
     border-radius: 20px;
     padding: 20px 40px;
     margin-left: 20px;
+    color: var(--two-color);
 }
 
 @media (max-width: 980px) {

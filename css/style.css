@@ -13,8 +13,11 @@ button {
 }
 
 button:hover {
-    background-color: #6d6c6ce6;
     cursor: pointer;
+}
+
+.btn-map:hover {
+    background-color: var(--eight-color);
 }
 
 a {
